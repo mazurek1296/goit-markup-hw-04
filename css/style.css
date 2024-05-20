@@ -29,6 +29,8 @@ body {
   justify-content: space-between;
   height: 72px;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: z wartościami 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 header {
   background-color: #ffffff;
@@ -75,7 +77,21 @@ header {
   display: inline-block;
   color: #2e2f42;
 }
-
+.navi-studio {
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navi-studio::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
 .contacts {
   font-style: normal;
   color: #434455;
@@ -92,6 +108,7 @@ header {
   padding: 24px 0;
   display: inline-block;
   color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -100,6 +117,17 @@ header {
 }
 
 /* SEKCJA PIERWSZA */
+.hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/heroimage.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .inline-row {
   display: flex;
@@ -161,6 +189,7 @@ header {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:active {
   background-color: #404bbf;
@@ -188,6 +217,43 @@ h2 {
 p {
   color: #434455;
   letter-spacing: 0.02em;
+}
+.social-links {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+}
+.social-item {
+  text-align: center;
+  margin: 0 auto;
+}
+.social-links {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+
+.social-links .social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.social-links .link:hover {
+  background-color: #fff;
+}
+
+.social-links .icon {
+  fill: #fff;
+}
+
+.social-links .link:hover .icon {
+  fill: #03a9f4;
 }
 .motto {
   color: #2e2f42;
@@ -301,10 +367,58 @@ p {
   padding: 100px 0;
   background-color: #2e2f42;
 }
+.footerdiv {
+  display: flex;
+  align-items: baseline;
+}
+.logo-paragraph {
+  margin-right: 120px;
+}
 .pfooter {
   color: #f4f4fd;
   font-family: "Roboto", sans-serif;
   max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
+}
+.social-medias {
+  display: flex;
+  align-items: baseline;
+}
+.social-media-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.social-item-footer {
+  width: 40px;
+  height: 40px;
+}
+.icon-footer {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: z wartością 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-footer:hover {
+  background-color: #31d0aa;
+}
+.icon-footer:active {
+  background-color: #31d0aa;
+}
+svg {
+  height: 24;
+  width: 24;
+  fill: #f4f4fd;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
 }
