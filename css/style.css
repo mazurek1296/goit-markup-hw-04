@@ -29,7 +29,7 @@ body {
   justify-content: space-between;
   height: 72px;
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: z wartościami 0px 2px 1px rgba(46, 47, 66, 0.08),
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 header {
@@ -236,11 +236,6 @@ p {
   margin-bottom: 8px;
 }
 
-.motto-svg {
-  width: 64;
-  height: 64;
-}
-
 /* SEKCJA TRZECIA */
 
 .our-team {
@@ -286,7 +281,7 @@ p {
 .social-media-icon:hover {
   background-color: #404bbf;
 }
-.social-media-icon:active {
+.social-media-icon:focus {
   background-color: #404bbf;
 }
 
@@ -337,6 +332,12 @@ p {
 .inline-portfolio {
   width: calc((100% - 48px) / 3);
 }
+.inline-portfolio:hover {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .name-category {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
