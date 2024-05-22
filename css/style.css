@@ -331,6 +331,8 @@ p {
 }
 .inline-portfolio {
   width: calc((100% - 48px) / 3);
+  transition-timing-function: ease-out;
+  transition-duration: 500ms;
 }
 .inline-portfolio:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
