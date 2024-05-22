@@ -340,6 +340,9 @@ p {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   cursor: pointer;
 }
+.inline-portfolio:hover .img-description {
+  transform: translateY(0);
+}
 
 .name-category {
   padding: 32px 16px;
