@@ -449,6 +449,9 @@ p {
 .social-item-footer:hover {
   background-color: #31d0aa;
 }
+.social-item-footer:active {
+  background-color: #31d0aa;
+}
 .social-item-footer:focus {
   background-color: #31d0aa;
 }
@@ -456,8 +459,6 @@ p {
   fill: #f4f4fd;
 }
 svg {
-  height: 24;
-  width: 24;
   fill: #f4f4fd;
 }
 
