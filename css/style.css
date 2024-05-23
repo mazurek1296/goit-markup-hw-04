@@ -331,16 +331,16 @@ p {
 }
 .inline-portfolio {
   width: calc((100% - 48px) / 3);
-}
-.inline-portfolio:hover .img-description {
-  transform: translateY(0);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  cursor: pointer;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 500ms;
   transition-timing-function: ease-out;
+  transition-duration: 500ms;
+}
+.inline-portfolio:hover .img-description {
+  transform: translateY(0);
 }
 
 .name-category {
@@ -369,6 +369,7 @@ p {
   padding: 40px 32px;
   transform: translateY(100%);
   margin: 0px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-portfolio {
